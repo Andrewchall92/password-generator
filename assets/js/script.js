@@ -20,5 +20,12 @@ function generatePassword(){
   var numberChar = "0123456789";
   var specialChar = "!\"#$%&'()*+,-./:;<=>?@[\\]^_`{|}~";
 
-  
+  var allChars ="";
+  var password ="";
+
+  var length = prompt("Enter a password length between 8 and 128");
+  if (length <8 || length>128){
+    alert("Invalid length.Please enter a number between 8 and 128")
+    return ""
+  }
 }

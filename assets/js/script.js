@@ -16,10 +16,10 @@ generateBtn.addEventListener("click", writePassword);
 
 function generatePassword(){
   // All variables possible for password generation
-  var lowercaseChar = "abcdefghijklmnopqrstuvwxyz";
-  var uppercaseChar = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
-  var numberChar = "0123456789";
-  var specialChar = "!\"#$%&'()*+,-./:;<=>?@[\\]^_`{|}~";
+  var lowercaseChars = "abcdefghijklmnopqrstuvwxyz";
+  var uppercaseChars = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
+  var numericChars = "0123456789";
+  var specialChars = "!\"#$%&'()*+,-./:;<=>?@[\\]^_`{|}~";
   // Defined as empty string to store data based on users choice
   var allChars ="";
   var password ="";
@@ -36,8 +36,14 @@ function generatePassword(){
   var incLudeSpecial = confirm("Include special characters?");
 
 
+  // Validate at least one character type is selected 
 
+  if (!incLudeLowercase && !incLudeUppercase && !incLudeNumeric && !incLudeSpecial) { 
 
+    alert("Please select at least one character type."); 
 
+    return ""; 
+
+  } 
 
 }

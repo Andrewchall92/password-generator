@@ -46,4 +46,13 @@ function generatePassword(){
 
   } 
 
+// Add value of defined character values (if preceding statement is truthy) to the end of the allChars value
+
+  if (incLudeLowercase) allChars += lowercaseChars;
+  if (incLudeUppercase) allChars += uppercaseChars;
+  if (incLudeNumeric) allChars += numericChars;
+  if (incLudeSpecial) allChars += specialChars;
+
+
+
 }

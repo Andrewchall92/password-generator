@@ -2,7 +2,7 @@
 
 ## Description
 
-I created this password generator in order to have an easy way to randomly create strong passwords. It is a simple page with a button the user selects to begin the process. When the user click on the generate passowrd button they will prompted to enter in a desired length of password with the condition that it must be between 8-128 characters. They will also be asked if they want to include lowercase, uppercase, numeric and special characters in their password. If the length is an invalid entry or at least one character type is not selected they will be see an alert pop up asking telling them why their request failed and how to make the right selections and entries.
+I created this password generator in order to have an easy way to randomly create strong passwords. It is a simple page with a button the user selects to begin the process. When the user clicks on the generate passoword button they will be prompted to enter in a desired length of password with the condition that it must be between 8-128 characters. They will also be asked if they want to include lowercase, uppercase, numeric and special characters in their password. If the length is an invalid entry or at least one character type is not selected they will see an alert pop up telling them why their request failed and how to make the right selections and entries.
 
 ## Features
 - Gnerates strong random passwords.

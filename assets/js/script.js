@@ -53,6 +53,13 @@ function generatePassword(){
   if (incLudeNumeric) allChars += numericChars;
   if (incLudeSpecial) allChars += specialChars;
 
+// Generate password
 
+for (var i = 0; i < length; i++) {
+  var randomIndex = Math.floor(Math.random() * allChars.length);
+  password += allChars[randomIndex];
+}
+
+return password;
 
 }
